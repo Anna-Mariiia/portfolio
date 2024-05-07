@@ -154,18 +154,7 @@ input, select, textarea {
 		line-height: 2.375;
 	}
 
-	a {
-		-moz-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-		-webkit-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-		-ms-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-		transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-		border-bottom: dotted 1px;
-		text-decoration: none;
-	}
-
-		a:hover {
-			border-bottom-color: transparent;
-		}
+	
 
 	strong, b {
 		font-weight: 600;
@@ -291,15 +280,7 @@ input, select, textarea {
 		color: #212931;
 	}
 
-	a {
-		color: #212931;
-		border-bottom-color: rgba(33, 41, 49, 0.5);
-	}
-
-		a:hover {
-			border-bottom-color: transparent;
-			color: #18bfef !important;
-		}
+	
 
 	strong, b {
 		color: #212931;
@@ -2631,50 +2612,39 @@ input, select, textarea {
 			.image.fit img {
 				width: 100%;
 			}
-
-		.image.main {
-			display: block;
-			margin: 4rem 0;
-			width: 100%;
-		}
-
-			.image.main:first-child {
-				margin-top: 0;
-			}
-
-			.image.main img {
+			.image.main {
+				display: block;
+				margin: 4rem 0;
 				width: 100%;
 			}
-
-		@media screen and (max-width: 736px) {
-
-			.image.fit {
-				margin: 2rem 0;
+	
+				.image.main:first-child {
+					margin-top: 0;
+				}
+	
+				.image.main img {
+					width: 100%;
+				}
+	
+			@media screen and (max-width: 736px) {
+	
+				.image.fit {
+					margin: 2rem 0;
+				}
+	
+				.image.main {
+					margin: 2rem 0;
+				}
+	
 			}
-
-			.image.main {
-				margin: 2rem 0;
-			}
-
+	
+		a.image {
+			overflow: hidden;
 		}
+	
+		
 
-	a.image {
-		overflow: hidden;
-	}
-
-		a.image img {
-			-moz-transition: -moz-transform 0.2s ease-out;
-			-webkit-transition: -webkit-transform 0.2s ease-out;
-			-ms-transition: -ms-transform 0.2s ease-out;
-			transition: transform 0.2s ease-out;
-		}
-
-		a.image:hover img {
-			-moz-transform: scale(1.05);
-			-webkit-transform: scale(1.05);
-			-ms-transform: scale(1.05);
-			transform: scale(1.05);
-		}
+		
 
 /* Actions */
 
@@ -4685,5 +4655,9 @@ input, select, textarea {
 			box-shadow: 0 0 1.5rem 0 rgba(0, 0, 0, 0.2);
 			visibility: visible;
 		}
+
+	}
+	.testcases { 
+		
 
 	}
